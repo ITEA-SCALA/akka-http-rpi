@@ -8,6 +8,7 @@ val postgresVersion       = "42.2.5"
 val h2Version             = "1.4.192"
 val akkaHttpJson4sVersion = "1.25.2"
 val macwireVersion        = "2.4.1"
+val pureConfigVersion     = "0.9.0"
 val logbackClassicVersion = "1.2.3"
 val scalaTestVersion      = "3.1.2"
 
@@ -18,9 +19,11 @@ libraryDependencies ++= Seq(
     "com.h2database"           %  "h2"                   % h2Version,
     "de.heikoseeberger"        %% "akka-http-json4s"     % akkaHttpJson4sVersion,
     "com.softwaremill.macwire" %% "macros"               % macwireVersion         % "provided",
-    "com.typesafe.akka"        %% "akka-http-testkit"    % akkaHttpVersion  % "test",
-    "com.typesafe.akka"        %% "akka-stream-testkit"  % akkaVersion      % "test",
-    "org.scalatest"            %% "scalatest"            % scalaTestVersion % "test"
+    "com.github.pureconfig"    %% "pureconfig"           % pureConfigVersion,
+    "ch.qos.logback"           %  "logback-classic"      % logbackClassicVersion,
+    "com.typesafe.akka"        %% "akka-http-testkit"    % akkaHttpVersion        % Test,
+    "com.typesafe.akka"        %% "akka-stream-testkit"  % akkaVersion            % Test,
+    "org.scalatest"            %% "scalatest"            % scalaTestVersion       % Test
 )
 
 

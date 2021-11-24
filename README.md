@@ -1,7 +1,7 @@
 # Akka-Http to assembly on JAR
 
+* `Repo`: https://github.com/matsluni/akka-http-rpi
 * [Blog post on the spray blog](<http://spray.io/blog/2013-07-23-spray-on-the-raspberry-pi/>)
-
 * [Code for old spray blog post](https://github.com/matsluni/spray-template)
 
 Чтобы начать работу, выполните следующие действия:

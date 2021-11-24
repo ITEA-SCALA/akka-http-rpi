@@ -9,8 +9,8 @@ object Boot extends App with Route {
 
   implicit val system = ActorSystem("akka-http")
 
-  // start a new HTTP server on port 8080 with our route as the handler
-  val bindingFuture = Http().newServerAt("0.0.0.0", 8082).bind(route)
+  // start a new HTTP server on port 8082 with our route as the handler
+  Http().bindAndHandle(route, "0.0.0.0", 8082) // TODO:  val bindingFuture = Http().newServerAt("0.0.0.0", 8082).bind(route)
 
   println(s"Server online at http://localhost:8082/\nPress RETURN to stop...")
 

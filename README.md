@@ -54,3 +54,12 @@ Follow these steps to get started:
         
 In my tests I could reach around 520 Req/sec with this setup, but this setup isn't in any way optimized.
 In further tests I want to investigate further and see some backpressure at work.
+
+
+![assembly](1.png)
+
+![cd target\scala-2.12 akka-http-rpi-assembly-0.0.1.jar](2.png)
+
+![java -jar akka-http-rpi-assembly-0.0.1.jar](3.png)
+
+![http://localhost:8082](4.png)

@@ -26,7 +26,7 @@
 
 5. Start the application:
 
-        > run
+        > java -jar akka-http-rpi-assembly-0.0.1.jar
 
     ![cd target\scala-2.12 akka-http-rpi-assembly-0.0.1.jar](2.png)
     ![java -jar akka-http-rpi-assembly-0.0.1.jar](3.png)
